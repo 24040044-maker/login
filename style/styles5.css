@@ -1,0 +1,78 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #615089;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #8bc1c0, #a8a8ef);
+    padding: 20px;
+    color: #ffffff;
+    text-shadow: 30px 5px 40px #333;
+}
+
+/* Menú de navegación */
+.menu {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Colores de los botones */
+.rojo {
+    background-color: #ff4757;
+}
+.verde {
+    background-color: #2ed573;
+}
+.azul {
+    background-color: #1e90ff;
+}
+
+/* Efecto hover */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Contenido principal */
+.contenido {
+    background: white;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    box-shadow: #160f0f82 40px 20px 40px 40px;
+}
+.galeria {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(2.2);
+}

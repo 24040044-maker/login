@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Nómina</title>
+  <link rel="stylesheet" href="style/styles4.css">
+  <script src="script/script2.js" defer></script>
+  <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.4BHC6h66uSImMbLCWwjxFgHaHa?w=196&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" />
+</head>
+    <header>
+        <nav class="menu">
+            <a href="index2.html" class="btn rojo">CALCULADORA</a>
+            <a href="index3.html" class="btn verde">EMPLEADOS</a>
+            <a href="index4.html" class="btn azul">CUADRADO</a>
+            <a href="home.html" class="btn amarillo">INICIO</a>
+        </nav>
+    </header>
+<body>
+  <h2>Registro de Nómina</h2>
+  <form id="formNomina">
+    <label for="id">ID Empleado:</label>
+    <input type="text" id="id">
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+
+    <label for="costo">Costo por hora:</label>
+    <input type="number" id="costo" step="10">
+
+    <label for="horas_normales">Horas Normales:</label>
+    <input type="number" id="horas_normales" value="40" readonly>
+
+    <label for="horas_extras">Horas Extras:</label>
+    <input type="number" id="horas_extras" value="5" readonly>
+
+    <label for="subtotal">Subtotal:</label>
+    <input type="number" id="subtotal" readonly>
+
+    <label for="ispt">ISPT (10%):</label>
+    <input type="number" id="ispt" readonly>
+
+    <label for="pago">Monto a Pagar:</label>
+    <input type="number" id="pago" readonly>
+
+    <div class="buttons">
+      <button type="button" onclick="calcularNomina()">Calcular</button>
+      <button type="reset">Limpiar</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

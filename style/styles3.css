@@ -1,0 +1,81 @@
+/* ====== Estilo General ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0464e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Colores */
+.rojo { background-color: #ff4757; }
+.verde { background-color: #2ed573; }
+.azul { background-color: #1e90ff; }
+.amarillo { background-color: #ffa502; }
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ====== Calculadora ====== */
+.calculadora {
+    background: #045cd0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #160f0f82 40px 20px 40px 40px;
+    width: 300px;
+    margin-top: 50px; /* separa el menú */
+}
+
+.display {
+    width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #e9e9e9;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.boton {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background: #0078d7;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.boton:hover { background: #005fa3; }
+.boton.operador { background: #f39c12; }
+.boton.operador:hover { background: #c87f0a; }
+.boton.igual { background: #27ae60; }
+.boton.igual:hover { background: #1e874b; }
+.boton.limpiar { background: #e74c3c; }
+.boton.limpiar:hover { background: #c0392b; }
